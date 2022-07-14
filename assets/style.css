@@ -14,17 +14,17 @@
     background: linear-gradient(#87CEEB, #E0F6FF);
 }
 
-.mario {
-    position: absolute;
-    bottom: 0;
-    width: 150px;
-}
-
 .pipe {
     position: absolute;
-    bottom: -24px;
+    bottom: 0;
     width: 122px;
     animation: pipe-animation 2.5s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
 }
 
 .jump {

@@ -19,12 +19,12 @@ const loop = setInterval(() => {
         pipe.style.animation = "none";
         pipe.style.left = `${pipePosition}px`;
 
-        pipe.style.animation = "none";
-        pipe.style.bottom = `${marioPosition}px`;
+        mario.style.animation = "none";
+        mario.style.bottom = `${marioPosition}px`;
 
         mario.src = "img/deadmario.png";
         mario.style.width = "90px";
-        mario.style.marginLeft = "3%";
+        mario.style.marginLeft = "50px";
 
         clearInterval(loop);
     }
