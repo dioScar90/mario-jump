@@ -17,7 +17,7 @@
 .pipe {
     position: absolute;
     bottom: 0;
-    width: 122px;
+    width: 80px;
     animation: pipe-animation 2.5s infinite linear;
 }
 
