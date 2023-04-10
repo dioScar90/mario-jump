@@ -11,7 +11,7 @@ const jump = () => {
 
 const loop = setInterval(() => {
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", '');
 
     console.log(marioPosition);
     
@@ -27,6 +27,12 @@ const loop = setInterval(() => {
         mario.style.marginLeft = "50px";
 
         clearInterval(loop);
+    }
+
+    if (pipePosition < -25 || pipePosition > -50) {
+        const placar = document.querySelector("#placar");
+        let placarNumero = +placar.innerHTML.trim();
+        placar.innerHTML = ++placarNumero;
     }
 }, 10);
 
